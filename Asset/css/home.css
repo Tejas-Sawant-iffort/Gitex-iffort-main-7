@@ -1,0 +1,107 @@
+ /* General Reset */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background */
+body {
+    background: linear-gradient(135deg, #1f1c2c, #928DAB);
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    color: white;
+}
+
+/* Glassmorphism Container */
+.landing-container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.15); /* Slight transparency */
+    backdrop-filter: blur(15px); /* Blur effect */
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    max-width: 1200px;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.18); /* Subtle inner glow */
+}
+
+/* Neon Border for Images */
+
+
+/* Neon Button Styling */
+.btn-custom {
+    background-color: transparent;
+    color: #00FFFF;
+    border: 2px solid rgba(0, 255, 255, 0.8);
+    border-radius: 5px;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 1px rgba(0, 255, 255, 0.8), 0 0 10px rgba(0, 255, 255, 0.6);
+}
+
+.btn-custom:hover {
+    background-color: rgba(0, 255, 255, 0.1);
+    box-shadow: 0 0 2px rgba(0, 255, 255, 1), 0 0 15px rgba(0, 255, 255, 0.8);
+    transform: scale(1.05);
+}
+
+.btn-custom a {
+    color: #00FFFF;
+    text-decoration: none;
+}
+
+.btn-custom a:hover {
+    text-decoration: none;
+}
+
+.text {
+    font-size: 18px;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+.powered-by {
+    font-size: 18px;
+    color: #aaa;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.logo img {
+    max-width: 450px;
+    margin-bottom: 20px;
+}
+
+.qr-code img {
+    max-width: 150px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+    .landing-container {
+        padding: 30px;
+    }
+
+    .logo img {
+        max-width: 300px;
+    }
+
+    .qr-code img {
+        max-width: 120px;
+    }
+
+    .btn-custom {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
